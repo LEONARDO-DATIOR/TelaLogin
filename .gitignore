@@ -1,0 +1,43 @@
+# Ignore arquivos de build do .NET
+bin/
+obj/
+out/
+
+# Configurações do Visual Studio
+.vs/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# Arquivos de cache e temporários
+*.cache
+*.log
+*.vsidx
+*.vscode/
+
+# Arquivos do NuGet
+*.nupkg
+project.lock.json
+packages/
+!packages/repositories.config
+
+# Arquivos de dependências do Entity Framework
+Migrations/
+
+# Arquivos do Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Configurações locais do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Configurações do Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Arquivos do Azure e IIS
+.azure/
+app.publish/

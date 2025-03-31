@@ -1,0 +1,45 @@
+﻿<Window x:Class="TelaLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelaLogin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Label x:Name="Titulo" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="8" Content="TELA DE LOGIN" Margin="4,4,4,4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Column="1" Content="Nome" Margin="4,4,4,4" Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
+        <Label Grid.Column="1" Content="Senha" Margin="4,4,4,4" Grid.Row="5" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom"/>
+        <PasswordBox x:Name="CampoSenhaEscodida" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6"/>
+        <TextBox x:Name="CampoSenhaExibida" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" Visibility="Hidden"/>
+        <Button Grid.Column="4" Content="Logar" Margin="4,4,4,4" Grid.Row="8" Grid.ColumnSpan="3"/>
+        <Button x:Name="BotaoVisualizarSenha" Grid.Column="5" Content="Vê" Margin="10,4,10,4" Grid.Row="6" Click="MostrarSenha" MouseLeave="EscodeSenha" />
+
+
+    </Grid>
+</Window>
