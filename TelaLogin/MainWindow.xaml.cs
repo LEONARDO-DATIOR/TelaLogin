@@ -42,5 +42,19 @@ namespace TelaLogin
             CampoSenhaExibida.Text = "";
             CampoSenhaExibida.Visibility = Visibility.Hidden;
         }
+
+        private void FazerLogin(object sender, RoutedEventArgs e)
+        {
+            if (CampoSenhaEscodida.Password == "1234" && CampoNome.Text == "leo")
+            {
+                Home home = new Home();
+                home.Show();
+                this.Close(); 
+            } else {
+                MessageBox.Show("Conta incorreta, tente novamente!");
+            }
+        }
+
+  
     }
 }

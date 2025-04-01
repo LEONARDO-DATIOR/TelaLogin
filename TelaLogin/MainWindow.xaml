@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TelaLogin"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="Conteudo" DragEnter="FazerLogin">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
             <ColumnDefinition Width="*" />
@@ -33,12 +33,12 @@
         </Grid.RowDefinitions>
         <Label x:Name="Titulo" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="8" Content="TELA DE LOGIN" Margin="4,4,4,4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         <Label Grid.Column="1" Content="Nome" Margin="4,4,4,4" Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom"/>
-        <TextBox Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="CampoNome" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
         <Label Grid.Column="1" Content="Senha" Margin="4,4,4,4" Grid.Row="5" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom"/>
         <PasswordBox x:Name="CampoSenhaEscodida" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6"/>
         <TextBox x:Name="CampoSenhaExibida" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" Visibility="Hidden"/>
-        <Button Grid.Column="4" Content="Logar" Margin="4,4,4,4" Grid.Row="8" Grid.ColumnSpan="3"/>
-        <Button x:Name="BotaoVisualizarSenha" Grid.Column="5" Content="Vê" Margin="10,4,10,4" Grid.Row="6" Click="MostrarSenha" MouseLeave="EscodeSenha" />
+        <Button x:Name="BotaoLogin" Grid.Column="4" Content="Logar" Margin="4,4,4,4" Grid.Row="8" Grid.ColumnSpan="3" Click="FazerLogin"/>
+        <Button x:Name="BotaoVisualizarSenha" DragEnter="FazerLogin" Grid.Column="5" Content="Vê" Margin="10,4,10,4" Grid.Row="6" Click="MostrarSenha" MouseLeave="EscodeSenha" />
 
 
     </Grid>
