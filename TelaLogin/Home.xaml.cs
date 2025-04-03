@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Text.Json;
+using System.IO;
 
 namespace TelaLogin
 {
@@ -22,6 +24,12 @@ namespace TelaLogin
         public Home()
         {
             InitializeComponent();
+        }
+
+        private void EnvioSenha(object sender, RoutedEventArgs e)
+        {
+            string conteudoArquivo = File.ReadAllText(@"C:\Users\leona\source\repos\TelaLogin\TelaLogin\bin\Debug\net8.0-windows\senha\senhas.txt.txt");
+            MessageBox.Show(conteudoArquivo);
         }
     }
 }

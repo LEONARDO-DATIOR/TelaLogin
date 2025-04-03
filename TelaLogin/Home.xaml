@@ -31,7 +31,13 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
-        <Label Grid.Column="1" Content="REALIZANDO TESTE" Grid.Row="4" Grid.ColumnSpan="8" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="4,4,4,4" Grid.RowSpan="2"/>
+        <Label Grid.Column="3" Content="BEM BINDO A TELA DE CADASTRO DE SENHAS &#xD;&#xA;DESEJA CADASTRAR ALGUMA?" Grid.Row="1" Grid.ColumnSpan="4" Margin="4,4,4,4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+        <Label Grid.Column="1" Content="Nome do local" Margin="4,4,4,4" Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="CampoNomeLocal"  Grid.Column="1" Grid.ColumnSpan="3" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" Padding="20, 0, 0, 0"/>
+        <Label Grid.Column="5" Content="Senha escolhida" Margin="4,4,4,4" Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="CampoSenhaEscolhida"  Grid.Column="5" Grid.ColumnSpan="3" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" Padding="20, 0, 0, 0"/>
+        <TextBlock Grid.Row="6" Grid.Column="1" Text="TEste de quantidade de senhas salvas" Grid.ColumnSpan="3"/>
+        <Button x:Name="BotaoEnvioSenha" Grid.Column="6" Grid.ColumnSpan="2" Grid.Row="8"  Content="SALVAR" Margin="4,4,4,4" Click="EnvioSenha"/>
     </Grid>
 
 </Window>

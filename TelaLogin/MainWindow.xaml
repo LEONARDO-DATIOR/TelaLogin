@@ -32,13 +32,13 @@
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
         <Label x:Name="Titulo" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="8" Content="TELA DE LOGIN" Margin="4,4,4,4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <Label Grid.Column="1" Content="Nome" Margin="4,4,4,4" Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom"/>
-        <TextBox x:Name="CampoNome" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
-        <Label Grid.Column="1" Content="Senha" Margin="4,4,4,4" Grid.Row="5" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom"/>
-        <PasswordBox x:Name="CampoSenhaEscodida" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6"/>
-        <TextBox x:Name="CampoSenhaExibida" Grid.Column="1" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" Visibility="Hidden"/>
+        <Label Grid.Column="4" Content="Nome" Margin="4,4,4,4" Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="CampoNome" Grid.Column="3" Grid.ColumnSpan="5" Margin="10,4,93,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
+        <Label Grid.Column="4" Content="Senha" Margin="4,4,4,4" Grid.Row="5" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center"/>
+        <PasswordBox x:Name="CampoSenhaEscodida" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6"/>
+        <TextBox x:Name="CampoSenhaExibida" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" Visibility="Hidden"/>
         <Button x:Name="BotaoLogin" Grid.Column="4" Content="Logar" Margin="4,4,4,4" Grid.Row="8" Grid.ColumnSpan="3" Click="FazerLogin"/>
-        <Button x:Name="BotaoVisualizarSenha" DragEnter="FazerLogin" Grid.Column="5" Content="Vê" Margin="10,4,10,4" Grid.Row="6" Click="MostrarSenha" MouseLeave="EscodeSenha" />
+        <Button x:Name="BotaoVisualizarSenha" DragEnter="FazerLogin" Grid.Column="7" Content="Vê" Margin="10,4,10,4" Grid.Row="6" Click="MostrarSenha" MouseLeave="EscodeSenha" />
 
 
     </Grid>
