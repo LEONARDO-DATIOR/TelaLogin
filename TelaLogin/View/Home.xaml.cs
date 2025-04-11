@@ -19,7 +19,7 @@ namespace TelaLogin
     /// <summary>
     /// Lógica interna para Home.xaml
     /// </summary>
-    /// 
+
 
     public class Senhas
     {

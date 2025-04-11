@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,6 +22,10 @@ namespace TelaLogin
         {
             InitializeComponent();
         }
+
+        //string StringAcesso = File.ReadAllText(@"C:\Users\leona\source\repos\TelaLogin\TelaLogin\bin\Debug\net8.0-windows\senha\acesso.txt");
+        //JsonDocument jsonStringAcesso = JsonDocument.Parse(StringAcesso);
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -55,6 +61,9 @@ namespace TelaLogin
             }
         }
 
-  
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
