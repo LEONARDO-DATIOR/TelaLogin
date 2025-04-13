@@ -37,21 +37,20 @@
         <Border Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="4" CornerRadius="20" BorderBrush="Gray" BorderThickness="1" Padding="2" Background="#FFEDEDED">
             <TextBox  x:Name="CampoNome" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="4" TextWrapping="Wrap" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged" Background="#FFEDEDED" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" SelectionTextBrush="{x:Null}" FocusVisualStyle="{x:Null}" />
         </Border>
-        <Label Grid.Column="4" Content="Senha" Margin="4,4,4,4" Grid.Row="5" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" FontSize="20" FontFamily="Arial" Foreground="White"/>
-        <Border Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" CornerRadius="20" BorderBrush="Gray" BorderThickness="1" Padding="2" Background="#FFEDEDED">
+		
+		<Label Grid.Column="4" Content="Senha" Margin="4,4,4,4" Grid.Row="5" Grid.ColumnSpan="2" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" FontSize="20" FontFamily="Arial" Foreground="White"/>
+		<Border Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" CornerRadius="20" BorderBrush="Gray" BorderThickness="1" Padding="2" Background="#FFEDEDED">
             <PasswordBox x:Name="CampoSenhaEscodida" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" SelectionBrush="{x:Null}" Background="#FFEDEDED" BorderBrush="{x:Null}" FocusVisualStyle="{x:Null}" />
         </Border>
-        <Border Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" CornerRadius="20" BorderBrush="Gray" BorderThickness="1" Padding="2" Background="#FFEDEDED" Visibility="Hidden">
-            <TextBox x:Name="CampoSenhaExibida" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" Visibility="Hidden" FocusVisualStyle="{x:Null}" />
+        <Border x:Name="BorderCampoSenhaExibida" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" CornerRadius="20" BorderBrush="Gray" BorderThickness="1" Padding="2" Background="#FFEDEDED" Visibility="Hidden">
+            <TextBox x:Name="CampoSenhaExibida" Grid.Column="3" Grid.ColumnSpan="4" Margin="4,4,4,4" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" Visibility="Hidden" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged" Background="#FFEDEDED" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" SelectionTextBrush="{x:Null}" FocusVisualStyle="{x:Null}" />
         </Border>
 
         <Border Grid.Column="7" Grid.Row="6" Margin="10,15,35,10" CornerRadius="20" BorderBrush="Yellow" BorderThickness="1" Padding="1">
             <Button x:Name="BotaoVisualizarSenha" DragEnter="FazerLogin" Grid.Column="7" Content="VER" Grid.Row="6" Click="MostrarSenha" MouseLeave="EscodeSenha" BorderBrush="{x:Null}" Background="#FF191819" Foreground="White" RenderTransformOrigin="0.5,0.5" Margin="6,0,6,0" Height="19" VerticalAlignment="Center" />
         </Border>
 
-        <TextBox Grid.Column="4" Grid.Row="7" Text="Teste" />
-
-        <Button x:Name="BotaoLogin" Grid.Column="4" Content="Logar" Margin="4,4,4,4" Grid.Row="8" Grid.ColumnSpan="2" Click="FazerLogin" Background="#FF191819" BorderBrush="White" FontSize="16" FontFamily="Impact" Foreground="White"/>
+		<Button x:Name="BotaoLogin" Grid.Column="4" Content="Logar" Margin="4,4,4,4" Grid.Row="8" Grid.ColumnSpan="2" Click="FazerLogin" Background="#FF191819" BorderBrush="White" FontSize="16" FontFamily="Impact" Foreground="White"/>
 
 
     </Grid>

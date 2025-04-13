@@ -3,13 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:TelaLogin"
              StartupUri="View/MainWindow.xaml">
-    <Application.Resources>
+    
+	
+	<Application.Resources>
+		<!-- DESIGN DO TEXTBOX-->
         <Style TargetType="TextBox">
-            <Setter Property="SnapsToDevicePixels" Value="True" />
-            <Setter Property="OverridesDefaultStyle" Value="True" />
-            <Setter Property="BorderBrush" Value="Gray" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="Background" Value="White" />
             <Setter Property="Padding" Value="5" />
             <Setter Property="Template">
                 <Setter.Value>
@@ -35,5 +33,52 @@
                 </Setter.Value>
             </Setter>   
         </Style>
+
+		<!-- DESIGN DO PASSWORD -->
+		<Style TargetType="PasswordBox">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="PasswordBox">
+						<Border x:Name="Bd"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+							<ScrollViewer Margin="0"
+                                          x:Name="PART_ContentHost" />
+						</Border>
+						<ControlTemplate.Triggers>
+							<!-- Remove a borda azul quando em foco -->
+							<Trigger Property="IsKeyboardFocused" Value="True">
+								<Setter TargetName="Bd" Property="BorderBrush" Value="{x:Null}"/>
+							</Trigger>
+							<Trigger Property="IsEnabled" Value="False">
+								<Setter Property="Opacity" Value="0.1"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+        
+        <!-- DESIGN DO LABEL -->
+        <!-- FontSize="20" FontFamily="Arial Black" BorderThickness="10,0,0,0" FontWeight="Bold" Background="#FF1A1A1A" Foreground="White"  -->
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="Arial Black" />
+            <Setter Property="BorderThickness" Value="10,0,0,0" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="White" />
+            <!-- <Setter Property="Template">
+                <Setter.Value>
+                        
+                </Setter.Value>
+            </Setter> -->
+        </Style>
+
+       
+            
     </Application.Resources>
+	
 </Application>

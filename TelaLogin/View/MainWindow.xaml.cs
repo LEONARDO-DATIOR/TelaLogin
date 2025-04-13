@@ -38,6 +38,7 @@ namespace TelaLogin
                 CampoSenhaEscodida.Visibility = Visibility.Hidden;
                 CampoSenhaExibida.Text = CampoSenhaEscodida.Password;
                 CampoSenhaExibida.Visibility = Visibility.Visible;
+                BorderCampoSenhaExibida.Visibility = Visibility.Visible;
             }
             
         }
@@ -47,6 +48,7 @@ namespace TelaLogin
             CampoSenhaEscodida.Visibility = Visibility.Visible;
             CampoSenhaExibida.Text = "";
             CampoSenhaExibida.Visibility = Visibility.Hidden;
+            BorderCampoSenhaExibida.Visibility = Visibility.Hidden;
         }
 
         private void FazerLogin(object sender, RoutedEventArgs e)
